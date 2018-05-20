@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>조선대 축제</title>
+
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet" type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="creative.min.css" rel="stylesheet">
+    <style>
+
+      #map {
+        height: 600px;
+        width: 100%;
+       }
+       .bold-ft{
+        font-family: Nanum Gothic;
+        font-weight: bold;
+       }
+       .colored-basic-ft{
+        font-family: Nanum Gothic;
+        color: #413C3A;
+       }
+       .colored-bold-ft{
+        font-family: Nanum Gothic;
+        font-weight: bold;
+        color: #413C3A;
+       }
+       .tb-style{
+        border: 1px solid;
+        width: 1500px;
+       }
+       .td-size{
+        padding-right: 200px;
+       }
+
+       .imgCalendar {
+        position: relative;
+        background-image: url("<%=asset_path 'calendar.png'%>");
+        width: 1200px;
+        height: 625px;
+        background-size: cover;
+       }
+       .content1 {
+        position: absolute;
+        top: 73%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 140px;
+        height: 100px;
+        opacity: 0;
+        background-color: #3DFF92;
+       }
+       .content2 {
+        position: absolute;
+        top: 73%;
+        left: 80.56%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: 100px;
+        opacity: 0;
+        background-color: #FFC0CB;
+       }
+       .content3 {
+        position: absolute;
+        top: 89.3%;
+        left: 12.6%;
+        transform: translate(-50%, -50%);
+        width: 140px;
+        height: 100px;
+        opacity: 0;
+        background-color: #FFC0CB;
+       }
+       .content4 {
+        position: absolute;
+        top: 89.3%;
+        left: 55.8%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: 100px;
+        opacity: 0;
+        background-color: #FFE650;
+       }
+       .content1:hover {
+        opacity: 0.5;
+       }
+       .content2:hover {
+        opacity: 0.5;
+       }
+       .content3:hover {
+        opacity: 0.5;
+       }
+       .content4:hover {
+        opacity: 0.5;
+       }
+    </style>
+  </head>
+
+  <body id="page-top">
+
+    <%= yield %>
+
+  <%= javascript_include_tag 'application' %>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal.min.js"></script>
+    <script src="vendor/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="creative.min.js"></script>
+
+
+   
+  </body>
+</html>
